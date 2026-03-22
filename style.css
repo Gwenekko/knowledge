@@ -1,0 +1,49 @@
+:root {
+  --color-white: #ffffff;
+  --color-bg: #fafbfc;
+  --color-green: #52c41a;
+  --color-green-light: #b7eb8f;
+  --color-green-soft: #f6ffed;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e8e8e8;
+  --color-gray-400: #bfbfbf;
+  --color-gray-600: #8c8c8c;
+  --color-gray-800: #262626;
+  --color-black: #141414;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+  --radius-lg: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-gray-800);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 主页面 & 引导页底部渐变背景 - 薄荷绿，柔和过渡 */
+.gradient-bg {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fffa 25%,
+    #e8faf0 50%,
+    #d1f4e0 70%,
+    #b2f2bb 88%,
+    #96e6a1 100%
+  );
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
